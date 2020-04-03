@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="40" viewBox="0 0 180 40">
+  <g id="Group_244" data-name="Group 244" transform="translate(-628 -350)">
+    <rect id="Rectangle_84" data-name="Rectangle 84" width="180" height="40" rx="5" transform="translate(628 350)" fill="#485a96"/>
+    <g id="Group_47" data-name="Group 47" transform="translate(508 -533)">
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="24" height="23.868" rx="3" transform="translate(128 891)" fill="#fff"/>
+      <path id="Path_279" data-name="Path 279" d="M114.521,60.216v-9.08h3.065l.459-3.539h-3.524V45.338c0-1.025.286-1.723,1.763-1.723h1.884V40.449a25.351,25.351,0,0,0-2.746-.139c-2.717,0-4.577,1.649-4.577,4.678V47.6h-3.072v3.539h3.072v9.08h3.675Z" transform="translate(30.148 854.784)" fill="#485a96"/>
+    </g>
+    <text id="Facebook" transform="translate(718 376)" fill="#fff" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="-30.751" y="0">Facebook</tspan></text>
+  </g>
+</svg>

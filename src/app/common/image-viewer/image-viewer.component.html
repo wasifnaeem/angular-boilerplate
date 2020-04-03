@@ -1,0 +1,19 @@
+<i class="left" *ngIf="showLeftArrow" (click)="previousPortfolio()"></i>
+<i class="right" *ngIf="showRightArrow" (click)="nextPortfolio()"></i>
+
+<div class="row no-gutters portfolio-title-container">
+  <div class="col text-center portfolio-title">
+    {{SelectedImage?.title}}
+  </div>
+</div>
+
+<div class="image-viewer-container">
+  <img [src]="SelectedImage?.file_url" onerror="this.src='assets/images/brand.svg'" alt="">
+</div>
+
+<div class="row no-gutters image-controls-container" *ngIf="imagesPath.length > 1">
+  <div class="col d-flex justify-content-center">
+    <div *ngFor="let img of imagesPath; let i = index" class="circle"
+      [ngClass]="{'filled-circle': current_image_index == i}"></div>
+  </div>
+</div>

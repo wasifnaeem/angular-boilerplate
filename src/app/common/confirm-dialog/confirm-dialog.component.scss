@@ -1,0 +1,31 @@
+@import "src/theme.scss";
+
+::ng-deep {
+  mat-dialog-container {
+    border-radius: 10px !important;
+  }
+}
+
+.text {
+  color: $info;
+  font-size: 14px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+button {
+  height: 25px;
+  width: 80px;
+  line-height: 1;
+  border-radius: 5px;
+}
+
+.btn-no {
+  color: $info;
+  background-color: $light4;
+}
+
+.btn-yes {
+  background-color: $primary;
+  color: white;
+}

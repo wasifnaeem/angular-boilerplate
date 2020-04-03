@@ -1,0 +1,8 @@
+<div #statusDiv class="fade-in" [hidden]="HideWhenOnline">
+  <div *ngIf="OnlineStatus === 'online'" class="online">
+    <span>{{ OnlineStatusMessage }}</span>
+  </div>
+  <div *ngIf="OnlineStatus === 'offline'" class="offline">
+    <span>{{ OnlineStatusMessage }}</span>
+  </div>
+</div>

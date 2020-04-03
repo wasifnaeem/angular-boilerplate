@@ -1,0 +1,15 @@
+<div class="disapprove-client-container">
+    <div class="title mb-1">{{data.statement}}</div>
+
+    <textarea rows="4" [formControl]="message" [placeholder]="data.placeholder"></textarea>
+    <mat-error class="error" *ngIf="message.touched && message.hasError('required')">
+        {{data.errorMsg}}
+    </mat-error>
+
+    <div class="row">
+        <div class="col d-flex justify-content-between mt-2">
+            <button mat-button class="cancel-btn" (click)="cancelAction()">{{data.cancelButtonText}}</button>
+            <button mat-button class="disapprove-btn" (click)="confirmAction()">{{data.confirmButtonText}}</button>
+        </div>
+    </div>
+</div>

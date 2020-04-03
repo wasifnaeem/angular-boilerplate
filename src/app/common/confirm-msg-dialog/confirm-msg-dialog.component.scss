@@ -1,0 +1,39 @@
+@import "src/theme.scss";
+
+::ng-deep {
+  .mat-dialog-container {
+    border-radius: 10px;
+  }
+}
+
+.error {
+  font-size: 10px;
+}
+
+textarea {
+  border-color: $light;
+  width: 100%;
+  padding: 8px;
+}
+
+button {
+  font-size: 12px;
+  height: 25px;
+  width: 88px;
+  line-height: 1.5;
+}
+
+.title {
+  color: $info;
+  font-size: 14px;
+}
+
+.cancel-btn {
+  color: $info;
+  background-color: $light4;
+}
+
+.disapprove-btn {
+  color: white;
+  background-color: $primary;
+}

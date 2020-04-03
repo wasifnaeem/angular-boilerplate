@@ -1,0 +1,9 @@
+<mat-form-field class="w-100">
+  <input matInput [matDatepicker]="dp" [min]="dateRange?.min" [max]="dateRange?.max" [placeholder]="placeholder"
+    [formControl]="_date" (click)="dp.open()" readonly>
+  <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+  <mat-datepicker #dp startView="multi-year" (yearSelected)="chosenYearHandler($event)"
+    (monthSelected)="chosenMonthHandler($event, dp)" panelClass="example-month-picker">
+  </mat-datepicker>
+  <mat-error *ngIf="_date.invalid">Date is required</mat-error> -->
+</mat-form-field>

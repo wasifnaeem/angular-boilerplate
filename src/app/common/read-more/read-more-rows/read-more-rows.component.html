@@ -1,0 +1,7 @@
+<div [class.collapsed]="isCollapsed" [style.height]="isCollapsed ? maxHeight+'px' : 'auto'">
+  <ng-content></ng-content>
+</div>
+
+<div class="text-right">
+  <a class="read-more" (click)="changeCollapseStatus()" *ngIf="isCollapsed">Read more</a>
+</div>

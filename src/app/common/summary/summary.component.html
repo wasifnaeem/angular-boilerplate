@@ -1,0 +1,9 @@
+<div class="row mb-2">
+  <div class="col-10 title">Summary</div>
+</div>
+
+<div class="row read" *ngIf="summary">
+  <div class="col">
+    <read-more-chars [enable_read_more]="enable_read_more" [text]="summary"></read-more-chars>
+  </div>
+</div>

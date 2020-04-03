@@ -1,0 +1,22 @@
+<div class="checklist-container fade-in" *ngIf="checklist">
+    <div class="row checklist-header" *ngIf="checklist.headings && checklist.headings.length">
+        <div class="col element-title" *ngFor="let item of checklist.headings; let i = index"
+            [ngClass]="{'p-0': i == 0, 'pr-0': i == checklist.headings.length - 1}">
+            <div [ngClass]="{'last-element': i == checklist.headings.length - 1}">{{item}}</div>
+        </div>
+    </div>
+    <div class="checklist-field-container" *ngIf="checklist.elements && checklist.elements.length">
+        <div class="row" *ngFor="let element of checklist.elements">
+            <div class="flex-column">
+                <img class="checklist-icon" *ngIf="element.is_satisfied" src="assets/icons/check-circle-blue.svg"
+                    alt="">
+                <img class="checklist-icon" *ngIf="!element.is_satisfied" src="assets/icons/circle-empty-blue.svg"
+                    alt="">
+            </div>
+            <div class="col element-item" *ngFor="let item of element.items; let i = index"
+                [ngClass]="{'pr-0': i == element.items.length - 1}">
+                <div [ngClass]="{'last-element': i == element.items.length - 1}">{{item}}</div>
+            </div>
+        </div>
+    </div>
+</div>

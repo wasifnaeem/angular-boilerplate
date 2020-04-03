@@ -1,0 +1,31 @@
+runtime: python27
+
+api_version: 1
+threadsafe: yes
+
+env_variables:
+  API_KEY: AIzaSyAdXaDn22D6qWpNrYFhQOaAVZRBhbend98
+  server_url: https://agileserver4.com/Server
+  angular_url: http://localhost:4200
+  rpc_login: {
+      username: user,
+      passcode: NZY8hvhRkaHr
+  }
+  rpc_broker_url: ws://34.94.1.35:15674/ws
+handlers:
+
+  - url: /
+    static_files: dist/index.html
+    upload: dist/index.html
+  - url: /
+    static_dir: dist
+
+skip_files:
+  - e2e/
+  - node_modules/
+  - src/
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^(.*/)?.*\.yaml$
+  - ^LICENSE

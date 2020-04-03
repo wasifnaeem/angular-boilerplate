@@ -1,0 +1,8 @@
+<div class="row no-gutters">
+  <div class="col-12">
+    <div [innerHTML]="currentText">
+    </div>
+    <a class="read-more" *ngIf="enable_read_more" [hidden]="hideToggle" (click)="toggleView()">Read
+      {{isCollapsed? 'more':'less'}}</a>
+  </div>
+</div>

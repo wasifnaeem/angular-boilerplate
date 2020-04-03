@@ -1,0 +1,17 @@
+<!-- <div class="d-flex">
+    <div *ngFor="let rating of rating_list; let i = index">
+        <img *ngIf="display_rating_value >= i + 1" [src]="FilePath.Icon.star_solid" (mouseenter)="onMouseEnter(rating)"
+            (mouseleave)="onMouseLeave()" (click)="selectedRating(rating)" alt="">
+        <img *ngIf="display_rating_value < i + 1" [src]="FilePath.Icon.star_regular" (mouseenter)="onMouseEnter(rating)"
+            (mouseleave)="onMouseLeave()" (click)="selectedRating(rating)" alt="">
+    </div>
+</div> -->
+
+<div class="d-flex">
+    <div *ngFor="let rating of rating_list; let i = index">
+        <img *ngIf="display_rating_value >= i + 1" [src]="FilePath.Icon.star_solid" (click)="selectedRating(rating)"
+            alt="">
+        <img *ngIf="display_rating_value < i + 1" [src]="FilePath.Icon.star_regular" (click)="selectedRating(rating)"
+            alt="">
+    </div>
+</div>
