@@ -19,16 +19,16 @@
   "dependencies": {
     "@angular/animations": "^9.1.11",
     "@angular/cdk": "^9.2.4",
-    "@angular/common": "~9.0.7",
-    "@angular/compiler": "~9.0.7",
-    "@angular/core": "~9.0.7",
-    "@angular/forms": "~9.0.7",
+    "@angular/common": "^9.1.11",
+    "@angular/compiler": "^9.1.11",
+    "@angular/core": "^9.1.11",
+    "@angular/forms": "^9.1.11",
     "@angular/localize": "^9.1.11",
     "@angular/material": "^9.2.4",
     "@angular/material-moment-adapter": "^9.2.4",
-    "@angular/platform-browser": "~9.0.7",
-    "@angular/platform-browser-dynamic": "~9.0.7",
-    "@angular/router": "~9.0.7",
+    "@angular/platform-browser": "^9.1.11",
+    "@angular/platform-browser-dynamic": "^9.1.11",
+    "@angular/router": "^9.1.11",
     "@auth0/angular-jwt": "^3.0.1",
     "@ckeditor/ckeditor5-angular": "^1.2.3",
     "@ckeditor/ckeditor5-build-classic": "^17.0.0",
@@ -43,10 +43,17 @@
     "zone.js": "^0.10.3"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@angular-devkit/build-angular": "~0.900.7",
     "@angular/cli": "~9.0.7",
     "@angular/compiler-cli": "~9.0.7",
     "@angular/language-service": "~9.0.7",
+=======
+    "@angular-devkit/build-angular": "^0.1000.0",
+    "@angular/cli": "^9.1.9",
+    "@angular/compiler-cli": "^9.1.11",
+    "@angular/language-service": "^9.1.11",
+>>>>>>> 36a2f36eb4d67a40b17f9f3d48e5e9d8557025ba
     "@types/jasmine": "~3.3.16",
     "@types/jasminewd2": "~2.0.8",
     "@types/jquery": "^3.5.0",
